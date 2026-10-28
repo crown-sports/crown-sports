@@ -20,6 +20,7 @@ I build practical Python and AI tools, with reproducible examples and regression
 | --- | --- | --- |
 | Debug broken tool-call histories | [toolreply · v0.1.0 preview](https://github.com/crown-sports/toolreply/releases/tag/v0.1.0) | Offline checks for missing, duplicate and misplaced tool replies. No runtime dependencies or API keys. |
 | Check image-text data before fine-tuning | [VLM Data Doctor live reports](https://crown-sports.github.io/vlm-data-doctor/) | Inspect actual synthetic sample reports without installing. The local CLI checks exact overlap and document splits, not answer quality. |
+| Decide whether a smaller vision model meets a quality budget | [VLM Precision Lab · v0.4.0](https://github.com/crown-sports/vlm-precision-lab/releases/tag/v0.4.0) | A recorded 3,792-request receipt study with reproducible CPU checks. Memory fell, but both model variants failed the quality gate. |
 | Turn a wall mask into editable paths | [WallGraph](https://github.com/crown-sports/wallgraph#try-it) | PNG/SVG/JSON in original image coordinates. Bring a binary mask; no pretrained detector is bundled. |
 | Compare room regions before and after an edit | [PlanRegions live demo](https://crown-sports.github.io/planregions/) | Region merges, splits and pixel flow, with saved local examples. |
 
@@ -58,5 +59,7 @@ The demo storefront returns 503 while health checks pass. Inspect two configurat
 ## Working together
 
 Small reproducible bug reports, documentation fixes and real first-use feedback are welcome in each project's issue tracker. Please use synthetic examples when a report involves private documents or logs.
+
+Thanks to [Harshit Nagila for the English Study Flow quickstart](https://github.com/crown-sports/obsidian-study-flow/pull/4), now merged with the original contribution preserved.
 
 欢迎通过各项目的 Issue 提供复现步骤或试用反馈。项目中的生成示例、实验结果和平台验证范围都在对应文档中说明。
