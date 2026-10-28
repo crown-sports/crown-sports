@@ -1,8 +1,28 @@
 # crown
 
-我写一些能在本地用起来的工具：把读过的资料留下来，把工作放进实际可用的时间，查清服务为什么出错。
+我做可复现的 Python 与 AI 工具：检查训练数据、定位 Agent 故障，把问题变成有回归测试的修复。
 
-I build local tools for studying, planning work, and investigating service failures.
+I build practical Python and AI tools, with reproducible examples and regression tests. My projects also cover floor-plan geometry and local learning workflows.
+
+## 已合并的上游修复 / Merged upstream fixes
+
+| Project | What changed | Evidence |
+| --- | --- | --- |
+| **Repowise** | Correct complexity scores for flat ternary dispatch across **seven languages**, while preserving real nesting and refreshing cached analysis. 修正七种语言的复杂度误报。 | [#4709 · merged](https://github.com/repowise-dev/repowise/pull/4709) |
+| **Repowise** | Parse empty and no-definition CSD files without crashing; retain resource line ranges. 修复空输入解析崩溃。 | [#4492 · merged](https://github.com/repowise-dev/repowise/pull/4492) |
+| **nanobot** | Apply the configured timeout to no-tools recovery and finalization requests so a stalled provider cannot hold a session indefinitely. 补齐模型请求超时保护。 | [#5496 · merged](https://github.com/HKUDS/nanobot/pull/5496) |
+
+[Read the failure → fix → regression case studies / 查看修复案例](docs/upstream-work.md) · [Other open PRs / 待审贡献](https://github.com/pulls?q=is%3Apr+is%3Aopen+author%3Acrown-sports+-user%3Acrown-sports)
+
+## AI 数据与图形工具 / Data and geometry tools
+
+| If you need to… | Try | Scope |
+| --- | --- | --- |
+| Check image-text data before fine-tuning | [VLM Data Doctor](https://github.com/crown-sports/vlm-data-doctor#try-the-report) | CPU-only checks, exact train/eval overlap and document-disjoint splits. Does not judge answer quality. |
+| Turn a wall mask into editable paths | [WallGraph](https://github.com/crown-sports/wallgraph#try-it) | PNG/SVG/JSON in original image coordinates. Bring a binary mask; no pretrained detector is bundled. |
+| Compare room regions before and after an edit | [PlanRegions live demo](https://crown-sports.github.io/planregions/) | Region merges, splits and pixel flow, with saved local examples. |
+
+[All projects, examples and limitations / 全部项目与使用范围](docs/projects.md)
 
 ## [Obsidian Study Flow](https://github.com/crown-sports/obsidian-study-flow) · 从原文到复习卡
 
@@ -34,6 +54,8 @@ The demo storefront returns 503 while health checks pass. Inspect two configurat
 
 [运行故障与恢复示例 / Try the failure-and-recovery demo](https://github.com/crown-sports/opsresolve#try-the-recovery-demo) · 截图为本地演示数据。Screenshot uses local demo data.
 
-## 上游贡献 / Upstream contribution
+## Working together
 
-- [nanobot #5496 — 已合并 / Merged](https://github.com/HKUDS/nanobot/pull/5496)：让恢复和收尾阶段、不调用工具的模型请求也受超时限制，避免会话一直等待。Apply the configured timeout to no-tools recovery and finalization requests so a stalled provider does not hold the session indefinitely.
+Small reproducible bug reports, documentation fixes and real first-use feedback are welcome in each project's issue tracker. Please use synthetic examples when a report involves private documents or logs.
+
+欢迎通过各项目的 Issue 提供复现步骤或试用反馈。项目中的生成示例、实验结果和平台验证范围都在对应文档中说明。
