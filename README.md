@@ -14,11 +14,12 @@ I build practical Python and AI tools, with reproducible examples and regression
 
 [Read the failure → fix → regression case studies / 查看修复案例](docs/upstream-work.md) · [Other open PRs / 待审贡献](https://github.com/pulls?q=is%3Apr+is%3Aopen+author%3Acrown-sports+-user%3Acrown-sports)
 
-## AI 数据与图形工具 / Data and geometry tools
+## 可直接试用的工具 / Tools to try
 
 | If you need to… | Try | Scope |
 | --- | --- | --- |
-| Check image-text data before fine-tuning | [VLM Data Doctor](https://github.com/crown-sports/vlm-data-doctor#try-the-report) | CPU-only checks, exact train/eval overlap and document-disjoint splits. Does not judge answer quality. |
+| Debug broken tool-call histories | [toolreply · v0.1.0 preview](https://github.com/crown-sports/toolreply/releases/tag/v0.1.0) | Offline checks for missing, duplicate and misplaced tool replies. No runtime dependencies or API keys. |
+| Check image-text data before fine-tuning | [VLM Data Doctor live reports](https://crown-sports.github.io/vlm-data-doctor/) | Inspect actual synthetic sample reports without installing. The local CLI checks exact overlap and document splits, not answer quality. |
 | Turn a wall mask into editable paths | [WallGraph](https://github.com/crown-sports/wallgraph#try-it) | PNG/SVG/JSON in original image coordinates. Bring a binary mask; no pretrained detector is bundled. |
 | Compare room regions before and after an edit | [PlanRegions live demo](https://crown-sports.github.io/planregions/) | Region merges, splits and pixel flow, with saved local examples. |
 
