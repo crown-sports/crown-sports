@@ -18,7 +18,7 @@ I build practical Python and AI tools, with reproducible examples and regression
 
 | If you need to… | Try | Scope |
 | --- | --- | --- |
-| Debug broken tool-call histories | [toolreply · v0.2.0 preview](https://github.com/crown-sports/toolreply/releases/tag/v0.2.0) | Offline CLI and [GitHub Action](https://github.com/crown-sports/toolreply/blob/v0.2.0/docs/action.md) for missing, duplicate and misplaced tool replies. Tested on Linux, Windows and macOS. |
+| Debug broken tool-call histories | [toolreply · v0.2.0 preview](https://github.com/crown-sports/toolreply/releases/tag/v0.2.0) | Offline CLI and [Marketplace Action](https://github.com/marketplace/actions/toolreply) for missing, duplicate and misplaced tool replies. Tested on Linux, Windows and macOS. |
 | Check image-text data before fine-tuning | [VLM Data Doctor live reports](https://crown-sports.github.io/vlm-data-doctor/) | Inspect actual synthetic sample reports without installing. The local CLI checks exact overlap and document splits, not answer quality. |
 | Decide whether a smaller vision model meets a quality budget | [VLM Precision Lab · v0.4.0](https://github.com/crown-sports/vlm-precision-lab/releases/tag/v0.4.0) | A recorded 3,792-request receipt study with reproducible CPU checks. Memory fell, but both model variants failed the quality gate. |
 | Turn a wall mask into editable paths | [WallGraph](https://github.com/crown-sports/wallgraph#try-it) | PNG/SVG/JSON in original image coordinates. Bring a binary mask; no pretrained detector is bundled. |
